@@ -7733,9 +7733,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-plugin-mdx@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "gatsby-plugin-mdx@npm:3.0.0"
+"gatsby-plugin-mdx@npm:^3.2.0":
+  version: 3.2.0
+  resolution: "gatsby-plugin-mdx@npm:3.2.0"
   dependencies:
     "@babel/core": ^7.15.5
     "@babel/generator": ^7.15.4
@@ -7753,7 +7753,7 @@ __metadata:
     escape-string-regexp: ^1.0.5
     eval: ^0.1.4
     fs-extra: ^10.0.0
-    gatsby-core-utils: ^3.0.0
+    gatsby-core-utils: ^3.2.0
     gray-matter: ^4.0.2
     json5: ^2.1.3
     loader-utils: ^1.4.0
@@ -7761,6 +7761,7 @@ __metadata:
     mdast-util-to-string: ^1.1.0
     mdast-util-toc: ^3.1.0
     mime: ^2.4.6
+    mkdirp: ^1.0.4
     p-queue: ^6.6.2
     pretty-bytes: ^5.3.0
     remark: ^10.0.1
@@ -7780,7 +7781,7 @@ __metadata:
     gatsby: ^4.0.0-next
     react: ^16.9.0 || ^17.0.0
     react-dom: ^16.9.0 || ^17.0.0
-  checksum: 2980f8816095df03ef363b7a01da0a227036fd000af70e572ec83a667a9afc8486bfa207e5b0a4cc29c6d5815ceb45769badb820cf6ce6afe61a06161fa9a88d
+  checksum: be345269cdb8170f0a28d504b63acfbb1cf85a160e5ef64ce7314a086efd43d5249f3751a9e45331ed7860e2f43fe4b51e64f70c599d85c94192c6fde1c1c5c9
   languageName: node
   linkType: hard
 
@@ -8573,7 +8574,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     gatsby: ^4.0.2
     gatsby-plugin-image: ^2.0.0
-    gatsby-plugin-mdx: ^3.0.0
+    gatsby-plugin-mdx: ^3.2.0
     gatsby-plugin-react-helmet: ^5.0.0
     gatsby-plugin-sharp: ^4.0.1
     gatsby-plugin-typescript: ^4.0.0
