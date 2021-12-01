@@ -9,27 +9,21 @@
   },
   "extends": ["eslint:recommended", "prettier"],
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+    "ecmaVersion": "latest",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
   },
   "overrides": [
     {
-      "files": ["{src,tests}/**/scripts/**/*.js"],
-      "parserOptions": {
-        "sourceType": "script",
-        "ecmaVersion": "latest",
-        "ecmaFeatures": {
-          "impliedStrict": true
-        }
-      }
-    },
-    {
-      "files": ["{src,tests}/**/*.{ts,tsx}"],
+      "files": ["**/*.{ts,tsx}"],
       "extends": ["plugin:@typescript-eslint/recommended"],
       "parser": "@typescript-eslint/parser",
-      "parserOptions": { "project": "./tsconfig.json" }
+      "parserOptions": { "project": "**/tsconfig.json" }
     },
     {
-      "files": ["{src,tests}/**/*.tsx"],
+      "files": ["**/*.tsx"],
       "extends": ["plugin:react/recommended", "plugin:react-hooks/recommended"],
       "settings": {
         "react": {
