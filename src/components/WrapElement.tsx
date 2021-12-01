@@ -1,3 +1,4 @@
+import { MDXProvider } from '@mdx-js/react';
 import { GatsbyBrowser } from 'gatsby';
 import React from 'react';
 import { GlobalStyle, ThemeProvider } from '../theme';
@@ -7,7 +8,9 @@ export const WrapElement: GatsbyBrowser['wrapRootElement'] = ({ element }) => {
   return (
     <ThemeProvider>
       <GlobalStyle />
-      <CommonLayout>{element}</CommonLayout>
+      <MDXProvider>
+        <CommonLayout>{element}</CommonLayout>
+      </MDXProvider>
     </ThemeProvider>
   );
 };
