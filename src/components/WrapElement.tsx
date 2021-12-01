@@ -8,7 +8,7 @@ export const WrapElement: GatsbyBrowser['wrapRootElement'] = ({ element }) => {
   return (
     <ThemeProvider>
       <GlobalStyle />
-      <MDXProvider>
+      <MDXProvider components={{}}>
         <CommonLayout>{element}</CommonLayout>
       </MDXProvider>
     </ThemeProvider>
