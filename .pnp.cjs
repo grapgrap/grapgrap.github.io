@@ -38,6 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.16.0"],
             ["@mdx-js/mdx", "npm:1.6.22"],
             ["@mdx-js/react", "virtual:1f058fb5114c4e13561dbf6be9fe5b943eeaed32a28a64f1dc088ea8de3c459ddc5dc92c8d98b7637468dbfb54af94f6b24bd057cd5660b27d4983e7248ab3e4#npm:1.6.22"],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.11.6"],
             ["@types/react", "npm:17.0.33"],
             ["@types/react-dom", "npm:17.0.10"],
@@ -4795,6 +4796,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/mdast", "npm:3.0.10"],
             ["@types/unist", "npm:2.0.6"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/mdx-js__react", [
+        ["npm:1.5.5", {
+          "packageLocation": "./.yarn/cache/@types-mdx-js__react-npm-1.5.5-4006dcef70-91229e9e4d.zip/node_modules/@types/mdx-js__react/",
+          "packageDependencies": [
+            ["@types/mdx-js__react", "npm:1.5.5"],
+            ["@types/react", "npm:17.0.33"]
           ],
           "linkType": "HARD",
         }]
@@ -11282,7 +11293,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@mdx-js/react", "virtual:1f058fb5114c4e13561dbf6be9fe5b943eeaed32a28a64f1dc088ea8de3c459ddc5dc92c8d98b7637468dbfb54af94f6b24bd057cd5660b27d4983e7248ab3e4#npm:1.6.22"],
             ["@types/gatsby", null],
             ["@types/mdx-js__mdx", null],
-            ["@types/mdx-js__react", null],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/react", "npm:17.0.33"],
             ["@types/react-dom", "npm:17.0.10"],
             ["camelcase-css", "npm:2.0.1"],
@@ -12092,6 +12103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.16.0"],
             ["@mdx-js/mdx", "npm:1.6.22"],
             ["@mdx-js/react", "virtual:1f058fb5114c4e13561dbf6be9fe5b943eeaed32a28a64f1dc088ea8de3c459ddc5dc92c8d98b7637468dbfb54af94f6b24bd057cd5660b27d4983e7248ab3e4#npm:1.6.22"],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.11.6"],
             ["@types/react", "npm:17.0.33"],
             ["@types/react-dom", "npm:17.0.10"],
