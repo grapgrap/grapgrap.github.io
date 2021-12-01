@@ -16,31 +16,21 @@
       "files": ["{src,tests}/**/scripts/**/*.js"],
       "parserOptions": {
         "sourceType": "script",
-        "ecmaVersion": 2020,
+        "ecmaVersion": "latest",
         "ecmaFeatures": {
           "impliedStrict": true
         }
       }
     },
     {
-      "files": ["{src,tests}/**/*.ts"],
-      "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "prettier"
-      ],
+      "files": ["{src,tests}/**/*.{ts,tsx}"],
+      "extends": ["plugin:@typescript-eslint/recommended"],
       "parser": "@typescript-eslint/parser",
-      "parserOptions": { "project": "**/tsconfig.json" }
+      "parserOptions": { "project": "./tsconfig.json" }
     },
     {
       "files": ["{src,tests}/**/*.tsx"],
-      "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:react-hooks/recommended",
-        "prettier"
-      ],
+      "extends": ["plugin:react/recommended", "plugin:react-hooks/recommended"],
       "settings": {
         "react": {
           "version": "detect"

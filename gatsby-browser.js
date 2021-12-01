@@ -1,1 +1,1 @@
-import './src/theme/font.css';
+import './src/theme/preload.css';
