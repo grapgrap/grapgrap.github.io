@@ -1,7 +1,16 @@
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
-export default function PageTemplate({ data }) {
+type Props = {
+  data: {
+    mdx: {
+      id: string;
+      body: string;
+    };
+  };
+};
+
+export default function PageTemplate({ data }: Props) {
   return <MDXRenderer>{data.mdx.body}</MDXRenderer>;
 }
 
