@@ -1,10 +1,4 @@
 {
-  "presets": [
-    [
-      "babel-preset-gatsby",
-      {
-        "reactRuntime": "automatic"
-      }
-    ]
-  ]
+  "presets": [["babel-preset-gatsby", { "reactRuntime": "automatic" }]],
+  "plugins": [["styled-components", { "ssr": true, "pure": true }]]
 }
