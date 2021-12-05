@@ -1,4 +1,5 @@
 import React, { ReactElement, ReactNode } from 'react';
+import styled from 'styled-components';
 import { Footer } from './Footer';
 import { Header } from './Header';
 
@@ -10,8 +11,10 @@ export function CommonLayout({ children }: Props): ReactElement {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <Contents>{children}</Contents>
       <Footer />
     </>
   );
 }
+
+const Contents = styled.main``;

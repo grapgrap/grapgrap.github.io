@@ -3,7 +3,7 @@ const isProduction = process.env.NODE_ENV !== 'development';
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-  const layout = path.resolve('src/components/Page.tsx');
+  const Post = path.resolve('src/components/Post/Post.tsx');
 
   const { data, errors } = await graphql(`
     {
@@ -33,7 +33,7 @@ exports.createPages = async ({ graphql, actions }) => {
     .forEach(({ node }) => {
       createPage({
         path: `/posts/${node.slug}/`,
-        component: layout,
+        component: Post,
         slug: node.slug,
         context: {
           id: node.id,

@@ -1,15 +1,19 @@
+import { Link } from 'gatsby';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
 
 export function Header(): ReactElement {
   return (
     <Container>
-      <Title>grapgrap --dev</Title>
+      <Link to="/">grapgrap --dev</Link>
+      <Navbar>
+        <Link to="/posts">Posts</Link>
+      </Navbar>
     </Container>
   );
 }
 
-const Title = styled.h3``;
+const Navbar = styled.nav``;
 
 const Container = styled.header`
   display: flex;
